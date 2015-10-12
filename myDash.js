@@ -900,7 +900,7 @@ const myDash = new Lang.Class({
             numChildren--;
         }
 
-        let pos = Math.floor(this._isHorizontal?x:y) * numChildren / boxHeight);
+        let pos = Math.floor((this._isHorizontal?x:y) * numChildren / boxHeight);
         if (pos >  numChildren) {
             pos = numChildren;
         }
